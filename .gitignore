@@ -1,0 +1,44 @@
+# ---- Build output ----
+/build/
+/CMakeFiles/
+/CMakeCache.txt
+/Makefile
+/*.make
+/*.cmake
+/*.dir
+
+# ---- Binaries ----
+/*.out
+/*.o
+/*.so
+/*.a
+/*.dll
+/*.exe
+/*.lib
+/*.obj
+/*.pdb
+oreon-system-manager-*
+# ---- IDE / Editor junk ----
+# VS Code
+.vscode/
+# CLion
+.idea/
+cmake-build-*/
+# Xcode
+*.xcodeproj/
+*.xcworkspace/
+
+# ---- OS-specific ----
+# macOS
+.DS_Store
+# Windows
+Thumbs.db
+desktop.ini
+
+# ---- Logs ----
+*.log
+
+# ---- Generated files ----
+*.tmp
+*.cache
+*.swp

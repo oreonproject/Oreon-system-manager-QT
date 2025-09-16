@@ -1,8 +1,0 @@
-/home/ali/Oreon-system-manager/CMakeFiles/oreon-system-manager.dir
-/home/ali/Oreon-system-manager/CMakeFiles/edit_cache.dir
-/home/ali/Oreon-system-manager/CMakeFiles/rebuild_cache.dir
-/home/ali/Oreon-system-manager/CMakeFiles/list_install_components.dir
-/home/ali/Oreon-system-manager/CMakeFiles/install.dir
-/home/ali/Oreon-system-manager/CMakeFiles/install/local.dir
-/home/ali/Oreon-system-manager/CMakeFiles/install/strip.dir
-/home/ali/Oreon-system-manager/CMakeFiles/oreon-system-manager_autogen.dir
