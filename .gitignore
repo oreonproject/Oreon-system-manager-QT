@@ -6,7 +6,9 @@
 /*.make
 /*.cmake
 /*.dir
-
+Makefile
+resources/resources.qrc.depends
+oreon-system-manager_autogen/
 # ---- Binaries ----
 /*.out
 /*.o
