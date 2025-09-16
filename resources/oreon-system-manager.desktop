@@ -1,0 +1,30 @@
+[Desktop Entry]
+Version=1.0
+Type=Application
+Name=Oreon System Manager
+GenericName=System Manager
+Comment=Comprehensive Linux system management tool
+Exec=oreon-system-manager
+Icon=oreon-system-manager
+Terminal=false
+StartupNotify=true
+Categories=System;Settings;PackageManager;
+Keywords=system;package;dnf;flatpak;container;docker;distrobox;audio;driver;firmware;
+MimeType=
+StartupWMClass=oreon-system-manager
+X-GNOME-Autostart-enabled=false
+X-KDE-autostart-enabled=false
+X-KDE-StartupNotify=true
+X-KDE-HasTempFileOption=false
+X-KDE-SubstituteUID=false
+Actions=
+
+[Desktop Action preferences]
+Name=Preferences
+Exec=oreon-system-manager --preferences
+Icon=preferences-system
+
+[Desktop Action system-info]
+Name=System Information
+Exec=oreon-system-manager --system-info
+Icon=system-info 

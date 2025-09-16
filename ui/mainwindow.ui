@@ -1,0 +1,295 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>MainWindow</class>
+ <widget class="QMainWindow" name="MainWindow">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>1200</width>
+    <height>800</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>Oreon System Manager</string>
+  </property>
+  <property name="windowIcon">
+   <iconset>
+    <normaloff>:/icons/oreon-system-manager.svg</normaloff>
+   </iconset>
+  </property>
+  <widget class="QWidget" name="centralwidget">
+   <layout class="QVBoxLayout" name="verticalLayout">
+    <property name="spacing">
+     <number>0</number>
+    </property>
+    <property name="leftMargin">
+     <number>0</number>
+    </property>
+    <property name="topMargin">
+     <number>0</number>
+    </property>
+    <property name="rightMargin">
+     <number>0</number>
+    </property>
+    <property name="bottomMargin">
+     <number>0</number>
+    </property>
+    <item>
+     <widget class="QTabWidget" name="tabWidget">
+      <property name="currentIndex">
+       <number>0</number>
+      </property>
+      <property name="tabPosition">
+       <enum>QTabWidget::North</enum>
+      </property>
+      <property name="tabShape">
+       <enum>QTabWidget::Rounded</enum>
+      </property>
+      <property name="usesScrollButtons">
+       <bool>true</bool>
+      </property>
+      <property name="documentMode">
+       <bool>false</bool>
+      </property>
+      <property name="tabsClosable">
+       <bool>false</bool>
+      </property>
+      <property name="movable">
+       <bool>true</bool>
+      </property>
+      <widget class="QWidget" name="packagesTab">
+       <attribute name="title">
+        <string>Packages</string>
+       </attribute>
+       <attribute name="icon">
+        <iconset>
+         <normaloff>:/icons/package.svg</normaloff>
+        </iconset>
+       </attribute>
+      </widget>
+      <widget class="QWidget" name="repositoriesTab">
+       <attribute name="title">
+        <string>Repositories</string>
+       </attribute>
+       <attribute name="icon">
+        <iconset>
+         <normaloff>:/icons/repository.svg</normaloff>
+        </iconset>
+       </attribute>
+      </widget>
+      <widget class="QWidget" name="containersTab">
+       <attribute name="title">
+        <string>Containers</string>
+       </attribute>
+       <attribute name="icon">
+        <iconset>
+         <normaloff>:/icons/container.svg</normaloff>
+        </iconset>
+       </attribute>
+      </widget>
+      <widget class="QWidget" name="audioTab">
+       <attribute name="title">
+        <string>Audio</string>
+       </attribute>
+       <attribute name="icon">
+        <iconset>
+         <normaloff>:/icons/audio.svg</normaloff>
+        </iconset>
+       </attribute>
+      </widget>
+      <widget class="QWidget" name="driversTab">
+       <attribute name="title">
+        <string>Drivers</string>
+       </attribute>
+       <attribute name="icon">
+        <iconset>
+         <normaloff>:/icons/driver.svg</normaloff>
+        </iconset>
+       </attribute>
+      </widget>
+     </widget>
+    </item>
+   </layout>
+  </widget>
+  <widget class="QMenuBar" name="menubar">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>0</y>
+     <width>1200</width>
+     <height>22</height>
+    </rect>
+   </property>
+   <widget class="QMenu" name="menuFile">
+    <property name="title">
+     <string>File</string>
+    </property>
+    <addaction name="actionExit"/>
+   </widget>
+   <widget class="QMenu" name="menuEdit">
+    <property name="title">
+     <string>Edit</string>
+    </property>
+    <addaction name="actionPreferences"/>
+   </widget>
+   <widget class="QMenu" name="menuView">
+    <property name="title">
+     <string>View</string>
+    </property>
+    <addaction name="actionRefresh"/>
+    <addaction name="separator"/>
+    <addaction name="actionShowLog"/>
+    <addaction name="actionShowSystemTray"/>
+   </widget>
+   <widget class="QMenu" name="menuTools">
+    <property name="title">
+     <string>Tools</string>
+    </property>
+    <addaction name="actionSystemInfo"/>
+    <addaction name="actionHardwareInfo"/>
+    <addaction name="separator"/>
+    <addaction name="actionBackup"/>
+    <addaction name="actionRestore"/>
+   </widget>
+   <widget class="QMenu" name="menuHelp">
+    <property name="title">
+     <string>Help</string>
+    </property>
+    <addaction name="actionAbout"/>
+    <addaction name="actionAboutQt"/>
+   </widget>
+   <addaction name="menuFile"/>
+   <addaction name="menuEdit"/>
+   <addaction name="menuView"/>
+   <addaction name="menuTools"/>
+   <addaction name="menuHelp"/>
+  </widget>
+  <widget class="QStatusBar" name="statusbar"/>
+  <action name="actionExit">
+   <property name="icon">
+    <iconset>
+     <normaloff>:/icons/exit.svg</normaloff>
+    </iconset>
+   </property>
+   <property name="text">
+    <string>Exit</string>
+   </property>
+   <property name="shortcut">
+    <string>Ctrl+Q</string>
+   </property>
+  </action>
+  <action name="actionPreferences">
+   <property name="icon">
+    <iconset>
+     <normaloff>:/icons/preferences.svg</normaloff>
+    </iconset>
+   </property>
+   <property name="text">
+    <string>Preferences</string>
+   </property>
+   <property name="shortcut">
+    <string>Ctrl+P</string>
+   </property>
+  </action>
+  <action name="actionRefresh">
+   <property name="icon">
+    <iconset>
+     <normaloff>:/icons/refresh.svg</normaloff>
+    </iconset>
+   </property>
+   <property name="text">
+    <string>Refresh</string>
+   </property>
+   <property name="shortcut">
+    <string>F5</string>
+   </property>
+  </action>
+  <action name="actionShowLog">
+   <property name="icon">
+    <iconset>
+     <normaloff>:/icons/log.svg</normaloff>
+    </iconset>
+   </property>
+   <property name="text">
+    <string>Show Log</string>
+   </property>
+   <property name="checkable">
+    <bool>true</bool>
+   </property>
+  </action>
+  <action name="actionShowSystemTray">
+   <property name="icon">
+    <iconset>
+     <normaloff>:/icons/system-tray.svg</normaloff>
+    </iconset>
+   </property>
+   <property name="text">
+    <string>Show System Tray</string>
+   </property>
+   <property name="checkable">
+    <bool>true</bool>
+   </property>
+   <property name="checked">
+    <bool>true</bool>
+   </property>
+  </action>
+  <action name="actionSystemInfo">
+   <property name="icon">
+    <iconset>
+     <normaloff>:/icons/system-info.svg</normaloff>
+    </iconset>
+   </property>
+   <property name="text">
+    <string>System Information</string>
+   </property>
+  </action>
+  <action name="actionHardwareInfo">
+   <property name="icon">
+    <iconset>
+     <normaloff>:/icons/hardware.svg</normaloff>
+    </iconset>
+   </property>
+   <property name="text">
+    <string>Hardware Information</string>
+   </property>
+  </action>
+  <action name="actionBackup">
+   <property name="icon">
+    <iconset>
+     <normaloff>:/icons/backup.svg</normaloff>
+    </iconset>
+   </property>
+   <property name="text">
+    <string>Backup Configuration</string>
+   </property>
+  </action>
+  <action name="actionRestore">
+   <property name="icon">
+    <iconset>
+     <normaloff>:/icons/restore.svg</normaloff>
+    </iconset>
+   </property>
+   <property name="text">
+    <string>Restore Configuration</string>
+   </property>
+  </action>
+  <action name="actionAbout">
+   <property name="icon">
+    <iconset>
+     <normaloff>:/icons/about.svg</normaloff>
+    </iconset>
+   </property>
+   <property name="text">
+    <string>About</string>
+   </property>
+  </action>
+  <action name="actionAboutQt">
+   <property name="text">
+    <string>About Qt</string>
+   </property>
+  </action>
+ </widget>
+ <resources/>
+ <connections/>
+</ui> 
