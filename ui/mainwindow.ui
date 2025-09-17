@@ -79,6 +79,9 @@
        </attribute>
       </widget>
       <widget class="QWidget" name="containersTab">
+      <property name="autoFillBackground">
+      <bool>true</bool>
+      </property>
        <attribute name="title">
         <string>Containers</string>
        </attribute>
